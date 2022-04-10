@@ -6,5 +6,5 @@ puppet resource file /21050672/script_dir clone ensure=absent force=true
 puppet resource file /21050672/script_dir ensure=directory
 puppet resource file /21050672/script_dir clone ensure=directory
 cd /21050672/script_dir
-git clone https://github.com/kash78/21050672_repo.git
+git clone https:// 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@github.com/kash78/21050672_repo.git
 cp -p /21050672/script_dir/index.html /var/www/html
