@@ -18,12 +18,12 @@ pipeline {
         }
         stage('Stage3-21050672') {
             steps {
-                sh "#!/bin/bash
+                sh '"#!/bin/bash
                  targets=websvr_21050672;
                  locate_script='/21050672/script_dir/21050672_repo/21050672_script';
                  docker cp $locate_script $targets://$locate_script;
                  bolt script run $locate_script -t $targets -u clientadm -p user123 --no-host-key-check --run-as root;
-                 "
+                 "'
                  echo "Development container updated"
             }
             
