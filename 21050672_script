@@ -2,7 +2,7 @@
 puppet resource package git ensure=present
 puppet resource package apache2 ensure=present
 puppet resource service apache2 ensure=running
-puppet resource file /21050672/21050672_repo clone ensure=absent force=true
+puppet resource file /21050672/21050672_repo ensure=absent force=true
 puppet resource file /21050672 ensure=directory
 cd /21050672/
 git clone https://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@github.com/kash78/21050672_repo.git
